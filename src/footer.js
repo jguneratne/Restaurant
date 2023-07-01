@@ -16,6 +16,10 @@ function createFooter() {
   myCopyright.classList = "my-copyright";
   myCopyright.textContent = "Jenn Guneratne © 2023";
   const gitHubLogo = document.createElement("img");
+  const gitHubLogoLink = document.createElement("a");
+  gitHubLogoLink.href = "https://github.com/jguneratne/restaurant-test";
+  gitHubLogoLink.target = "_blank";
+  gitHubLogoLink.rel = "noopener noreferrer";
   gitHubLogo.className = "github-logo";
   gitHubLogo.src = Image;
   const copyCopyright = document.createElement("div");
@@ -29,7 +33,8 @@ function createFooter() {
   photoCopyright.appendChild(photoCopyrightText);
   footer.appendChild(mainFooter);
   mainFooter.appendChild(myCopyright);
-  mainFooter.appendChild(gitHubLogo);
+  mainFooter.appendChild(gitHubLogoLink);
+  gitHubLogoLink.appendChild(gitHubLogo);
   footer.appendChild(copyCopyright);
   copyCopyright.appendChild(copyCopyrightText);
 }
