@@ -78,7 +78,7 @@
   --menu-card-color: rgb(255, 228, 196);
 }
 
-.container {
+#container {
   display: grid;
   grid-template-rows: auto 1fr auto;
   align-items: center;
