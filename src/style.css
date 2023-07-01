@@ -155,7 +155,7 @@
 .tabs {
   background-color: var(--main-green-color);
   width: 70%;
-  height: min-content;
+  min-height: 30ch;
   margin: 6ch auto 6ch auto;
   text-align: center;
 
