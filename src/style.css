@@ -252,6 +252,10 @@
 
 /* Menu Tab */
 
+.menu-content {
+  padding-bottom: 1ch;
+}
+
 .menu-card {
   width: 100%;
   min-height: min-content;

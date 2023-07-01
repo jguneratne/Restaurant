@@ -10,6 +10,7 @@ module.exports = {
     "./src/footer.js",
     "./src/homeTab.js",
     "./src/aboutTab.js",
+    "./src/menuTab.js",
   ],
   output: {
     filename: "bundle.js",
