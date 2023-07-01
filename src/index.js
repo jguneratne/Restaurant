@@ -40,4 +40,5 @@ function components() {
   tabBtn5.textContent = "Contact";
 }
 
-document.body.appendChild(components());
+//
+components();
