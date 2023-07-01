@@ -15,11 +15,11 @@ function createFooter() {
   const myCopyright = document.createElement("p");
   myCopyright.classList = "my-copyright";
   myCopyright.textContent = "Jenn Guneratne © 2023";
-  const gitHubLogo = document.createElement("img");
   const gitHubLogoLink = document.createElement("a");
   gitHubLogoLink.href = "https://github.com/jguneratne/restaurant-test";
   gitHubLogoLink.target = "_blank";
   gitHubLogoLink.rel = "noopener noreferrer";
+  const gitHubLogo = document.createElement("img");
   gitHubLogo.className = "github-logo";
   gitHubLogo.src = Image;
   const copyCopyright = document.createElement("div");
