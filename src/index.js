@@ -1,1 +1,1 @@
-console.log("webpack setup");
+console.log("restaurant project");
