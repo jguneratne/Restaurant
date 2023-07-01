@@ -156,6 +156,7 @@
   background-color: var(--main-green-color);
   width: 70%;
   min-height: 30ch;
+  height: min-content;
   margin: 6ch auto 6ch auto;
   text-align: center;
 
@@ -241,7 +242,7 @@
   height: 100%;
 }
 
-.call-to-action-book {
+.call-to-action-reserve {
   grid-area: 2 / 4 / 3 / 5;
 }
 
