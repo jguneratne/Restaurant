@@ -315,10 +315,6 @@ label {
   font-family: "Shantell Sans Light Bold", cursive;
 }
 
-label:after {
-  content: ": ";
-}
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
