@@ -13,6 +13,7 @@ module.exports = {
     "./src/menuTab.js",
     "./src/reservationsTab.js",
     "./src/contactTab.js",
+    "./src/pretendTab.js",
   ],
   output: {
     filename: "bundle.js",
