@@ -167,17 +167,16 @@
 
   outline-offset: -4.5ch;
   outline: 1px solid var(--focus-green-color);
-
-  /* display: none; */
 }
-
-/* .tabs--active {
-  display: block;
-} */
 
 .tab-content {
   width: 84%;
   margin: 5ch auto 5ch auto;
+  display: none;
+}
+
+.tabs-content--active {
+  display: block;
 }
 
 .tab-content:first-child {

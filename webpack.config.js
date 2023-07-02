@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: [
-    "./src/index.js",
     "./src/navBar.js",
     "./src/main.js",
     "./src/footer.js",
