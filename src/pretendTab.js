@@ -23,4 +23,4 @@ function pretendTab() {
   pretendDivContent.appendChild(btnInput);
 }
 
-pretendTab();
+export default { pretendTab };

@@ -79,4 +79,4 @@ function createMenuTab() {
   menuCardPeppers.appendChild(peppersImg);
 }
 
-createMenuTab();
+export default { createMenuTab };

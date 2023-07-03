@@ -30,4 +30,4 @@ function createAboutTab() {
   aboutDivContent.appendChild(fourthP);
 }
 
-createAboutTab();
+export default { createAboutTab };

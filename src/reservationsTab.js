@@ -106,4 +106,4 @@ function createReservationsTab() {
   reservationForm.appendChild(btnInput);
 }
 
-createReservationsTab();
+export default { createReservationsTab };

@@ -75,4 +75,4 @@ function createContactTab() {
   contactForm.appendChild(btnInput);
 }
 
-createContactTab();
+export default { createContactTab };

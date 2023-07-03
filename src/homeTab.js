@@ -42,4 +42,4 @@ function createHomeTab() {
   homeContentDiv.appendChild(callActionContact);
 }
 
-createHomeTab();
+export default { createHomeTab };
