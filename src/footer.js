@@ -15,7 +15,7 @@ export default function createFooter() {
   myCopyright.classList = "my-copyright";
   myCopyright.textContent = "Jenn Guneratne © 2023";
   const gitHubLogoLink = document.createElement("a");
-  gitHubLogoLink.href = "https://github.com/jguneratne/restaurant-test";
+  gitHubLogoLink.href = "https://github.com/jguneratne/restaurant";
   gitHubLogoLink.target = "_blank";
   gitHubLogoLink.rel = "noopener noreferrer";
   const gitHubLogo = document.createElement("img");
