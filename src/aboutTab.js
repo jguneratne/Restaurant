@@ -1,8 +1,7 @@
-import "./style.css";
-
-function createAboutTab() {
-  const tabBackground = document.querySelector(".tabs");
-  tabBackground.classList = "tabs about-tab";
+export default function createAboutTab() {
+  const main = document.querySelector(".main");
+  const tabBackground = document.createElement("div");
+  tabBackground.className = "tabs about-tab";
   tabBackground.setAttribute("data-tab", "about");
   const aboutDivContent = document.createElement("div");
   aboutDivContent.className = "tab-content";
@@ -22,6 +21,7 @@ function createAboutTab() {
   fourthP.textContent =
     " Whether you're joining us for an intimate dinner, a celebratory gathering, or a casual brunch with friends, we strive to create an environment that fosters connection, appreciation, and a true sense of community. At Farmstead Kitchen, we invite you to embark on a culinary adventure, embracing the beauty of farm-to-table dining. Join us in celebrating the abundance of nature, supporting local producers, and indulging in the flavors of our region. We look forward to serving you and sharing our passion for sustainable and delicious cuisine.";
 
+  main.appendChild(tabBackground);
   tabBackground.appendChild(aboutDivContent);
   aboutDivContent.appendChild(aboutHeading);
   aboutDivContent.appendChild(firstP);
@@ -29,5 +29,3 @@ function createAboutTab() {
   aboutDivContent.appendChild(thirdP);
   aboutDivContent.appendChild(fourthP);
 }
-
-export default { createAboutTab };

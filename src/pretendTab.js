@@ -1,8 +1,7 @@
-import "./style.css";
-
-function pretendTab() {
-  const tabBackground = document.querySelector(".tabs");
-  tabBackground.classList = "tabs pretend-tab";
+export default function pretendTab() {
+  const main = document.querySelector(".main");
+  const tabBackground = document.createElement("div");
+  tabBackground.className = "tabs pretend-tab";
   tabBackground.setAttribute("data-tab", "pretend");
   const pretendDivContent = document.createElement("div");
   pretendDivContent.className = "tab-content";
@@ -17,10 +16,9 @@ function pretendTab() {
   btnInput.setAttribute("data-for-tab", "home");
   btnInput.value = "Take Me Home";
 
+  main.appendChild(tabBackground);
   tabBackground.appendChild(pretendDivContent);
   pretendDivContent.appendChild(pretendHeading);
   pretendDivContent.appendChild(pretendBlurb);
   pretendDivContent.appendChild(btnInput);
 }
-
-export default { pretendTab };

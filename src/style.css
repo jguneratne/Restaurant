@@ -168,7 +168,7 @@
   outline-offset: -4.5ch;
   outline: 1px solid var(--focus-green-color);
 
-  /* display: none; */
+  display: none;
 }
 
 .tabs--active {

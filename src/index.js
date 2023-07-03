@@ -5,7 +5,7 @@ import createMenuTab from "./menuTab";
 import createReservationsTab from "./reservationsTab";
 import createContactTab from "./contactTab";
 import pretendTab from "./pretendTab";
-import setupTabs from "./tabControl";
+import tabControls from "./tabControl";
 
 createHomeTab();
 createAboutTab();
@@ -13,4 +13,15 @@ createMenuTab();
 createReservationsTab();
 createContactTab();
 pretendTab();
-setupTabs();
+
+document.addEventListener("DOMContentLoaded", () => {
+  tabControls();
+
+  document.querySelectorAll(".tabs-bar").forEach((tabBtn) => {
+    tabBtn.querySelector(".tab-btn").click();
+  });
+
+  document.querySelectorAll(".main").forEach((tabContent) => {
+    tabContent.querySelector(".tabs").click();
+  });
+});

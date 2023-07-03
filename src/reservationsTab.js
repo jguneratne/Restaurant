@@ -1,8 +1,7 @@
-import "./style.css";
-
-function createReservationsTab() {
-  const tabBackground = document.querySelector(".tabs");
-  tabBackground.classList = "tabs reserve-tab";
+export default function createReservationsTab() {
+  const main = document.querySelector(".main");
+  const tabBackground = document.createElement("div");
+  tabBackground.className = "tabs reserve-tab";
   tabBackground.setAttribute("data-tab", "reserve");
   const reserveDivContent = document.createElement("div");
   reserveDivContent.className = "tab-content";
@@ -81,6 +80,7 @@ function createReservationsTab() {
   btnInput.setAttribute("data-for-tab", "pretend");
   btnInput.value = "Submit";
 
+  main.appendChild(tabBackground);
   tabBackground.appendChild(reserveDivContent);
   reserveDivContent.appendChild(reserveHeading);
   reserveDivContent.appendChild(requiredFieldsDiv);
@@ -105,5 +105,3 @@ function createReservationsTab() {
   requests.appendChild(requestsTextBox);
   reservationForm.appendChild(btnInput);
 }
-
-export default { createReservationsTab };

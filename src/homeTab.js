@@ -1,9 +1,9 @@
-import "./style.css";
 import Image from "./assets/imgs/Guneratne_2022.06.24_5006945.jpg";
 
-function createHomeTab() {
-  const tabBackground = document.querySelector(".tabs");
-  tabBackground.classList = "tabs home-tab";
+export default function createHomeTab() {
+  const main = document.querySelector(".main");
+  const tabBackground = document.createElement("div");
+  tabBackground.className = "tabs home-tab";
   tabBackground.setAttribute("data-tab", "home");
   const homeContentDiv = document.createElement("div");
   homeContentDiv.className = "tab-content home-content";
@@ -32,6 +32,7 @@ function createHomeTab() {
   callActionContact.setAttribute("data-for-tab", "contact");
   callActionContact.textContent = "Get in Touch!";
 
+  main.appendChild(tabBackground);
   tabBackground.appendChild(homeContentDiv);
   homeContentDiv.appendChild(homeHeader);
   homeContentDiv.appendChild(callActionMenu);
@@ -41,5 +42,3 @@ function createHomeTab() {
   homeContentDiv.appendChild(callActionReserve);
   homeContentDiv.appendChild(callActionContact);
 }
-
-export default { createHomeTab };

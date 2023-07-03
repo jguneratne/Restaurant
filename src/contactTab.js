@@ -1,8 +1,7 @@
-import "./style.css";
-
-function createContactTab() {
-  const tabBackground = document.querySelector(".tabs");
-  tabBackground.classList = "tabs contact-tab";
+export default function createContactTab() {
+  const main = document.querySelector(".main");
+  const tabBackground = document.createElement("div");
+  tabBackground.className = "tabs contact-tab";
   tabBackground.setAttribute("data-tab", "contact");
   const contactDivContent = document.createElement("div");
   contactDivContent.className = "tab-content";
@@ -58,6 +57,7 @@ function createContactTab() {
   btnInput.setAttribute("data-for-tab", "pretend");
   btnInput.value = "Submit";
 
+  main.appendChild(tabBackground);
   tabBackground.appendChild(contactDivContent);
   contactDivContent.appendChild(contactHeading);
   contactDivContent.appendChild(contactBlurb);
@@ -74,5 +74,3 @@ function createContactTab() {
   subject.appendChild(subjectTextBox);
   contactForm.appendChild(btnInput);
 }
-
-export default { createContactTab };

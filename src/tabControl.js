@@ -1,4 +1,4 @@
-function setupTabs() {
+export default function tabControls() {
   document.querySelectorAll(".tab-btn").forEach((button) => {
     button.addEventListener("click", () => {
       const tabsBar = button.parentElement;
@@ -31,17 +31,3 @@ function setupTabs() {
     });
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  setupTabs();
-
-  document.querySelectorAll(".tabs-bar").forEach((tabBtn) => {
-    tabBtn.querySelector(".tab-btn").click();
-  });
-
-  document.querySelectorAll(".main").forEach((tabContent) => {
-    tabContent.querySelector(".tabs").click();
-  });
-});
-
-export default { setupTabs };

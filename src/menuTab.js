@@ -1,12 +1,12 @@
-import "./style.css";
 import Image1 from "./assets/imgs/Guneratne_2022.08.03_5007128.jpg";
 import Image2 from "./assets/imgs/Guneratne_2022.08.11_5007144.jpg";
 import Image3 from "./assets/imgs/Guneratne_2022.11.24_5007469.jpg";
 import Image4 from "./assets/imgs/Guneratne_2022.12.24_5007676.jpg";
 
-function createMenuTab() {
-  const tabBackground = document.querySelector(".tabs");
-  tabBackground.classList = "tabs menu-tab";
+export default function createMenuTab() {
+  const main = document.querySelector(".main");
+  const tabBackground = document.createElement("div");
+  tabBackground.className = "tabs menu-tab";
   tabBackground.setAttribute("data-tab", "menu");
   const menuDivContent = document.createElement("div");
   menuDivContent.className = "tab-content menu-content";
@@ -59,6 +59,7 @@ function createMenuTab() {
   peppersImg.alt = "Plate of Crispy Fried Peppers";
   peppersImg.className = "menu-img";
 
+  main.appendChild(tabBackground);
   tabBackground.appendChild(menuDivContent);
   menuDivContent.appendChild(menuHeading);
   menuDivContent.appendChild(menuCardCrackers);
@@ -78,5 +79,3 @@ function createMenuTab() {
   menuCardPeppers.appendChild(peppersDescript);
   menuCardPeppers.appendChild(peppersImg);
 }
-
-export default { createMenuTab };
