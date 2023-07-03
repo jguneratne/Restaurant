@@ -1,7 +1,6 @@
-import "./style.css";
 import Image from "./assets/imgs/GitHub-Mark-32px.png";
 
-function createFooter() {
+export default function createFooter() {
   const contentBox = document.querySelector("#content");
   contentBox.className = "container";
   const footer = document.createElement("div");
@@ -38,5 +37,3 @@ function createFooter() {
   footer.appendChild(copyCopyright);
   copyCopyright.appendChild(copyCopyrightText);
 }
-
-createFooter();

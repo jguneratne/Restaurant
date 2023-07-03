@@ -1,6 +1,4 @@
-import "./style.css";
-
-function createNavBar() {
+export default function createNavBar() {
   const contentBox = document.querySelector("#content");
   contentBox.className = "container";
 
@@ -43,5 +41,3 @@ function createNavBar() {
   tabsBar.appendChild(tabBtnContact);
   tabBtnContact.textContent = "Contact";
 }
-
-createNavBar();
